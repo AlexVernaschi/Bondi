@@ -10,7 +10,6 @@ class Tarjeta implements Int_Tarjeta{
 		$this->id = $id;
 	}
 	public function pagar(Transporte $transporte, $fecha_y_hora){ 
-	//Para pagar Colectivos.
 	if($transporte->getTipo()==1){ 
 		$aux1 = strtotime($fecha_y_hora);
 		$aux2 = strtotime($this->ultimafecha);
@@ -45,14 +44,11 @@ class Tarjeta implements Int_Tarjeta{
 			} else {
 				$boleto = new Boleto($fecha_y_hora,1,$costo,$this->saldo,$transporte->getId(),$this->id);
 			}
-			// Se pudo pagar.
 			return $boleto;
 		} else {
-			// No se pudo pagar.
 			return 0;
 		}
 		} 
-	//Para pagar Bicis.
 	if($transporte->getTipo()==2){ 
 		$aux1 = strtotime($fecha_y_hora);
 		$aux2 = strtotime($this->ultimabicipaga);
