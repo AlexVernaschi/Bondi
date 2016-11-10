@@ -18,7 +18,7 @@ class Viaje {
 		return $this->transporte;
 	}
 	public function getTipo(){
-		return $this->tipos[$this->tipos];
+		return $this->tipos[$this->tipo];
 	}
 }
 ?>
