@@ -5,5 +5,5 @@ interface Int_Tarjeta {
  public function recargar($monto);
  public function saldo();
  public function viajesRealizados();
-}.
+}
 ?>
