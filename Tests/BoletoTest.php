@@ -5,7 +5,6 @@ class BoletoTest extends \PHPUnit_Framework_TestCase {
   public function setup(){
 			$this->tarjeta = new Tarjeta(1);
 		  $this->colectivoA = new Colectivo("101 Negro", "Rosario Bus");
-  		$this->colectivoB = new Colectivo("101 Rojo", "Rosario Bus");
   }
   public function testBoleto() {
     $this->tarjeta->recargar(272);
