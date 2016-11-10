@@ -17,9 +17,7 @@ class BoletoTest extends \PHPUnit_Framework_TestCase {
     $this->assertEquals($aux->getId(),1, "El id de la tarjeta es 1");
     $this->assertEquals($aux->getSaldo(),312, "Usted tiene 312 de saldo");
     $this->assertEquals($this->tarjeta->saldo(), 312, "Cuando recargo 272 y pago un colectivo deberia tener 312");
-  }
-  public function testColectivo() {
     $this->assertEquals($aux->getNombreEmpresa(),"Rosario Bus", "La Empresa es Rosario Bus");
+  }
  }
-}
 ?>
