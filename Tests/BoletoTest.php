@@ -21,4 +21,5 @@ class BoletoTest extends \PHPUnit_Framework_TestCase {
   public function testColectivo() {
     $this->assertEquals($aux->getNombreEmpresa(),"Rosario Bus", "La Empresa es Rosario Bus");
  }
+}
 ?>
