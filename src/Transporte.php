@@ -9,7 +9,7 @@ abstract class Transporte {
 		return $this->tipo;
 	}
 	public function getCosto(){
-		return $this->costoo;
+		return $this->costo;
 	}
 	public function getCostoTrans(){
 		return $this->costotrans;
